@@ -15,9 +15,9 @@ dotenv.config();
 const app = express();
 // Middleware
 // Habilita CORS
-app.use(cors()); 
+app.use(cors());
 // Permite que la app acepte datos JSON
-app.use(bodyParser.json()); 
+app.use(bodyParser.json());
 // app.use(express.json());
 // Permite el envio de datos de tipo utlencode
 app.use(express.urlencoded({ extended: true }));
@@ -34,3 +34,4 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Servidor corriendo en http://localhost:${port}`);
 });
+
