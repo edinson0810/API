@@ -3,6 +3,8 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
+
+
 // Configuración de la conexión
 const connection = await mysql.createConnection({
   host: process.env.DB_HOST,
